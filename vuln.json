@@ -1,0 +1,52 @@
+{
+  "id": 151181,
+  "public_id": "CVE-2019-14893",
+  "score": 9.8,
+  "severity": "critical",
+  "description": "A flaw was discovered in FasterXML jackson-databind in all versions before 2.9.10 and 2.10.0...",
+  "source": "scantist",
+  "publish_date": "2020-03-02T21:15:00Z",
+  "security_issue_data": {
+    "vector": {
+      "scope": "UNCHANGED",
+      "attackVector": "NETWORK",
+      "baseSeverity": "CRITICAL",
+      "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "integrityImpact": "HIGH",
+      "userInteraction": "NONE",
+      "attackComplexity": "LOW",
+      "availabilityImpact": "HIGH",
+      "privilegesRequired": "NONE",
+      "confidentialityImpact": "HIGH"
+    }
+  },
+  "hyperlinks": [
+    "https://access.redhat.com/errata/RHSA-2020:0729",
+    "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14893",
+    "https://github.com/FasterXML/jackson-databind/issues/2469"
+  ],
+  "external_issue_info": [
+    {
+      "external_issue_id": 222761,
+      "external_public_id": "CNNVD-202001-906",
+      "external_issue_description": "FasterXMLJackson is a data processing tool for Java...",
+      "extra_data": {
+        "al_score": null,
+        "il_score": null,
+        "vl_score": null,
+        "al_severity": "none",
+        "il_severity": "none",
+        "vl_severity": "none"
+      }
+    }
+  ],
+  "cwe": {
+    "id": 446,
+    "cwe_id": "CWE-502",
+    "name": "Deserialization of Untrusted Data",
+    "weakness_abstraction": "Variant",
+    "status": "Draft",
+    "description": "The application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
+    "extended_description": "It is often convenient to serialize objects for communication..."
+  }
+}
